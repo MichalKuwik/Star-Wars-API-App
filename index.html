@@ -10,7 +10,34 @@
 </head>
 <body>
     
-    <p>Hello can you hear me?</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 mt-5 bg-dark rounded p-3">
+                <h2 class="text-uppercase text-center text-light">Gwiezdne <span class="text-warning">Wojny</span></h2>
+                <h5 class="text-secondary text-center">Szukaj w API</h5>
+                <form id="search-form" class="mt-5">
+                    <div class="input-group mb-3">
+                        <input type="text" id="search-input" class="form-control" placeholder="Szukaj dla...">
+
+                        <select class="custom-select" id="search-opt">
+                            <option selected value="films">Filmy</option>
+                            <option value="people">Ludzie</option>
+                            
+                        </select>
+
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">Szukaj</button>
+                        </div>
+                    </div>
+                </form>
+
+                <ul class="list-group" id="search-res">
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
 
     <script
         src="https://code.jquery.com/jquery-3.4.0.min.js"
