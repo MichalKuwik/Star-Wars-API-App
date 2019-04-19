@@ -44,7 +44,7 @@ const showResult = (serachOption, result) => {
     if(serachOption === 'people'){
     html = result.map(resu => generateHTML(`<b>Imię i nazwisko:</b> ${resu.name}, <b>Płeć:</b> ${resu.gender} , <b>Wzrost:</b> ${resu.height}cm`))
     }else if(serachOption === 'planets'){
-        html = result.map(resu => generateHTML(`<b>Nazwa:</b> ${resu.name}, <b>Populacja:</b> ${resu.population}mieszkańców`))
+        html = result.map(resu => generateHTML(`<b>Nazwa:</b> ${resu.name}, <b>Teren:</b> ${resu.terrain} , <b>Populacja:</b> ${resu.population}mieszkańców`))
     }
 
     searchResultEl.innerHTML = html.join('');
