@@ -45,6 +45,8 @@ const showResult = (serachOption, result) => {
     html = result.map(resu => generateHTML(`<b>Imię i nazwisko:</b> ${resu.name}, <b>Płeć:</b> ${resu.gender} , <b>Wzrost:</b> ${resu.height}cm`))
     }else if(serachOption === 'planets'){
         html = result.map(resu => generateHTML(`<b>Nazwa:</b> ${resu.name}, <b>Teren:</b> ${resu.terrain} , <b>Populacja:</b> ${resu.population}mieszkańców`))
+    }else if(serachOption === 'films'){
+        html = result.map(resu => generateHTML(`<b>Tytuł:</b> '${resu.title}', <b>Reżyser:</b> ${resu.director} , <b>Data wydania:</b> ${resu.release_date}r.`))
     }
 
     searchResultEl.innerHTML = html.join('');
